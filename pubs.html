@@ -1,0 +1,229 @@
+<html>
+<head>
+	<title>David Rozen-Rechels - Home Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body {
+		font-family: "Lato", sans-serif
+	}
+
+	.hide{
+		display: none !important;
+	}
+
+	a.w3-bar-item img.icon{
+		max-height: 1em;
+	}
+
+	.mySlides {
+		display: none
+	}
+
+	.photo-grid img{
+		height: auto;
+		width: auto;
+		max-height: 150px;
+	}
+	</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="./index.php" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">RESEARCH<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="./research.html" class="w3-bar-item w3-button">Research</a>
+          <a href="./current.html" class="w3-bar-item w3-button">Current projects</a>
+          <a href="./past.html" class="w3-bar-item w3-button">Past projects</a>
+        </div>
+      </div>
+      <a href="./pubs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
+      <a href="./teaching.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING</a>
+      <a href="./cv.pdf" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CV</a>
+      <a href="./blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
+      <a href="./index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <a href="./music.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MUSIC</a>
+      <a href="./photography.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTO</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small en_languageButton" data-language="fr" title="English">
+        <img src="./images/en_icon.png" alt="English" class="icon" />
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small fr_languageButton" data-language="en" title="Français">
+        <img src="./images/fr_icon.png" alt="Français" class="icon" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <div class="w3-dropdown-hover">
+        <button class="w3-padding-large w3-button" title="More">RESEARCH<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="./research.html" class="w3-bar-item w3-button">Research</a>
+          <a href="./current.html" class="w3-bar-item w3-button">Current projects</a>
+          <a href="./past.html" class="w3-bar-item w3-button">Past projects</a>
+        </div>
+      </div>
+      <a href="./pubs.html" class="w3-bar-item w3-button w3-padding-large">PUBLICATIONS</a>
+      <a href="./teaching.html" class="w3-bar-item w3-button w3-padding-large">TEACHING</a>
+      <a href="CV.pdf" target="_blank" class="w3-bar-item w3-button w3-padding-large">CV</a>
+      <a href="./blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
+      <a href="./index.html#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+      <a href="./music.html" class="w3-bar-item w3-button w3-padding-large">MUSIC</a>
+      <a href="./photography.html" class="w3-bar-item w3-button w3-padding-large">PHOTO</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large en_languageButton" data-language="fr" title="English">
+        <img src="./images/en_icon.png" alt="English" class="icon" />
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large fr_languageButton" data-language="en" title="Français">
+        <img src="./images/fr_icon.png" alt="Français" class="icon" />
+      </a>
+  </div>
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img5.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img6.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img7.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img8.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+
+
+<!-- The Research Section -->
+<div class="w3-container w3-content w3-padding-64" style="max-width:1000px" id="pubs">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">Publications list</h2>
+    <ol>
+  <li><b>Rozen-Rechels, D.</b>, van Beest, F. M., Richard, E., Uzal, A., Medill, S. A. and McLoughlin, P. D. (2015). Density-dependent, central-place foraging in a grazing herbivore: competition and tradeoffs in time allocation near water. Oikos 124, 1142–1150. <a href="./PUBS/Rozen-Rechels_et_al-2015-Oikos.pdf">PDF</a></li>
+  <li><b>Rozen-Rechels, D.</b>, Peigné, S., Germain, D. and Ladevèze, S. (2016). Intraspecific morphological variation of the middle ear in the European badger, <i>Meles meles</i> (Carnivora: Mustelidae). Biological Journal of the Linnean Society 119, 106–116. <a href="./PUBS/Rozen-Rechels_et_al-2016-Biological_Journal_of_the_Linnean_Society.pdf">PDF</a></li>
+  <li>Veldhuis, M. P., <b>Rozen-Rechels, D.</b>, Roux, E., Cromsigt, J. P., Berg, M. P. and Olff, H. (2017). Determinants of patchiness of woody vegetation in an African savanna. Journal of Vegetation Science 28, 93–104. <a href="./PUBS/Veldhuis_et_al-2016-Journal_of_Vegetation_Science.pdf">PDF</a></li>
+  <li>Dew, L. A., <b>Rozen-Rechels, D.</b>, le Roux, E., Cromsigt, J. and te Beest, M. (2017). Evaluating the efficacy of invasive plant control in response to ecological factors. South African Journal of Botany 109, 203–213. <a href="./PUBS/Dew_et_al-2017-South_African_Journal_of_Botany.pdf">PDF</a></li>
+  <li><b>Rozen-Rechels, D.</b>, Beest, M., Dew, L. A., Roux, E., Druce, D. J., Cromsigt, J. P. G. M. and Rejmanek, M. (2017). Contrasting impacts of an alien invasive shrub on mammalian savanna herbivores revealed on a landscape scale. Diversity and Distributions 23, 656–666. <a href="./PUBS/Rozen-Rechels_et_al-2017-Diversity_and_DIstributions.pdf">PDF</a></li>
+  <li><b>Rozen-Rechels, D.</b>, Dupoué, A., Meylan, S., Decencière, B., Guingand, S. and Le Galliard, J.-F. (2018). Water restriction in viviparous lizards causes transgenerational effects on behavioral anxiety and immediate effects on exploration behavior. Behavioral Ecolology and Sociobiology 72, 1–14. <a href="./PUBS/Rozen-Rechels_et_al-2018-Behavioral_Ecology_and_Sociobiology.pdf">PDF</a></li>
+  <li>Dupoué, A., Lourdais, O., Meylan, S., Brischoux, F., Angelier, F., <b>Rozen-Rechels, D.</b>, Marcangeli, Y., Decencière, B., Agostini, S. and Le Galliard, J.-F. (in press). Some like it dry: water restriction overrides heterogametic sex determination in two reptiles. Ecology and Evolution, 9:6524:6533. <a href="./PUBS/Dupoué_et_al-2019-Ecology_and_Evolution.pdf">PDF</a></li>
+  <li><b>Rozen-Rechels D.</b>, Dupoué A., Lourdais O., Chamaillé-Jammes S., Meylan S., Clobert J., and Le Galliard J.-F. (2019). When water interacts with temperature: ecological and evolutionary implications of thermo-hydroregulation in terrestrial ectotherms. Ecology and Evolution, 9:10029-10043. <a href="./PUBS/Rozen-Rechels_et_al-2019-Ecology_and_Evolution">PDF</a></li>
+  <li>Dupoué A., Angelier F., Ribout C., Meylan S., <b>Rozen-Rechels D.</b>, Decencière B., Agostini S., Le Galliard J.-F. (2020) Chronic water restriction triggers sex-specific oxidative stress and telomere shortening in lizards. Biology Letters, 16: 20190889. <a href="Dupoué_et_al-2020-Biology_Letters">PDF</a></li>
+  <li>Dupoué A., Blaimont P., <b>Rozen-Rechels D.</b>, Richard M., Meylan S., Clobert J., Miles D.B., Martin Rémi, Decencière B., Agostini S., Le Galliard J.-F. (2020). Water availability and temperature induce changes in oxidative status during pregnancy in a viviparous lizard. Functional Ecology, 34:475-485. <a href="Dupoué_et_al-2020-Functional_Ecology">PDF</a></li>
+  <li>Rutschmann A., <b>Rozen-Rechels D.</b>, Dupoué A., Blaimont P., de Villemereuil P., Miles D.B., Richard M., Clobert J. (2020) Climate dependent heating and cooling efficiency in the Common lizard. Ecology and Evolution, 10:8007–8017. <a href="./PUBS/Rutschmann_et_al-2020-Ecology_and_Evolution.pdf">PDF</a></li>
+  <li><b>Rozen-Rechels D.</b>, Dupoué A., Meylan S., Qitout K., Decencière B., Agostini S., and Le Galliard J.-F. (2020). Acclimation to water restriction implies different paces for behavioral and physiological responses in a lizard. Physiological and Biochemical Zoology, 93:160–174. <a href="./PUBS/Rozen-Rechels_et_al-2020-Physiological_and_Biochemical_Zoology.pdf">PDF</a></li>
+  <li><b>Rozen-Rechels D.</b>, Badiane A., Agostini S., Meylan S., and Le Galliard J.-F. (2020). Water restriction induces behavioral fight strategies but impairs thermoregulation in a dry-skinned ectotherm. Oikos, 129:572-584. <a href="./PUBS/Rozen-Rechels_et_al-2020-Oikos.pdf">PDF</a></li>
+  <li><b>Rozen-Rechels D.</b>, Farigoule P., Agostini S., Badiane A., Meylan S., and Le Galliard J.-F. (2020) Short-term change in water availability influences thermoregulation behaviours in a dry-skinned ectotherm. Journal of Animal Ecology, 89:2099–2110. <a href="./PUBS/Rozen-Rechels_et_al-2020-Journal_of_Animal_Ecology.pdf">PDF</a></li>
+  <li><b>Rozen-Rechels D.</b>, Valls-Fox H., Mabika C., Chamaillé-Jammes S. (2020) Temperature as a potential constraint on the timing and duration of African elephant foraging trips. Journal of Mammalogy, 101:1670-1679. <a href="">PDF</a></li>
+  <li>Le Galliard J.-F., <b>Rozen-Rechels D.</b>, Lecomte A., Demay C., Dupoué A., Meylan S. (2021) Short-term changes in air humidity and water availability weakly constrain thermoregulation in a dry-skinned ectotherm. Plos ONE, 16:e0247514. <a href="Le_Galliard_et_al-2021-Plos_ONE.pdf">PDF</a></li>
+  <li><b>Rozen-Rechels D.</b>, Rutschmann A., Dupoué A., Blaimont P., Chauveau V., Miles D.B., Guillon M., Richard M., Badiane A., Meylan S., Clobert J., and Le Galliard J.-F. (2021) Interaction of hydric and thermal conditions drives geographic variation in thermoregulation in a widespread lizard. Ecological Monographs, 91:e01440. <a href="./PUBS/Rozen-Rechels_et_al-2021-Ecological_Monographs.pdf">PDF</a></li>
+  <li>Rutschmann A., Dupoué A., Miles D.B.,  Megía Palma‬ R., Lauden C., Richard M., Badiane A., <b>Rozen-Rechels D.</b>, Brevet M., Blaimont P., Meylan S., Clobert J. and Le Galliard J.-F. (2021) Intense nocturnal warming alters growth strategies, coloration, and parasite load in a diurnal lizard. Journal of Animal Ecology, 90:1864-1877. <a href="Rutschmann_et_al-2021-Journal_of_Animal_Ecology">PDF</a></li>
+  <li>Papageorgiou D., <b>Rozen-Rechels D.</b>, Nyaguthii B., Farine D. (2021) Seasonality impacts collective movements in a wild group-living bird. Movement Ecology, 9:38. <a href="Papageorgiou_et_al-2021-Movement_Ecology">PDF</a></li>
+  <li>Jouanneau W., Sebastiano M., <b>Rozen-Rechels D.</b>, Harris S.M., Blévin P., Angelier F., Brischoux F., Gernigon J., Lemesle J.-C., Robin F., Cherel Y., Bustamente P., Chastel O. (2022) Blood mercury concentrations in four sympatric gull species from South Western France: Insights from stable isotopes and biologging. Environmental Pollution, 308:119619. <a href="">PDF</a></li>
+  <li>Badiane A., Dupoué A., Blaimont P., Miles D.B., Gilbert A.L., Leroux-Coyau M., Kawamoto A., <b>Rozen-Rechels D.</b>, Meylan S., Clobert J., Le Galliard J.-F. (2022) Environmental conditions and male quality traits simultaneously explain variation of multiple colour signals in male lizards. Journal of Animal Ecology, 91:1906-1917. <a href="">PDF</a></li>
+  <li>Dupoué A., Blaimont P., Angelier F., Ribout C., <b>Rozen-Rechels D.</b>, Richard M., Miles D.B., de Villemereuil P., Rutschmann A., Badiane A., Aubret F., Lourdais O., Meylan S., Cote J.? Clobert J., Le Galliard J.-F. (2022) Lizards from warm and declining populations are born with extremely short telomeres. Proceedings of the National Academy of Sciences, 119:e2201371119. <a href="">PDF</a></li>
+</ol>
+ </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<a href="https://twitter.com/DRozenRechels" target="_blank">
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+</a>
+&nbsp;<small>This website has been built with the help of <a href="http://louphole.com/" target="_blank">Louphole</a></small>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+window.drr_language = localStorage.getItem("drr_language");
+if(window.drr_language == null){
+window.drr_language = ["fr", "en"].indexOf(window.navigator.language) > -1 ? window.navigator.language : "en";
+localStorage.setItem("drr_language", window.drr_language);
+}
+switchLanguage(window.drr_language);
+
+function switchLanguage(newLanguage){
+var allLanguageElements = document.querySelectorAll('[data-language]');
+for(var i = 0; i< allLanguageElements.length; i++){
+  allLanguageElements[i].classList.add("hide");
+}
+var selectedLanguageElements = document.querySelectorAll('[data-language="'+ newLanguage +'"]');
+for(var i = 0; i< selectedLanguageElements.length; i++){
+  selectedLanguageElements[i].classList.remove("hide");
+}
+localStorage.setItem("drr_language", newLanguage);
+}
+
+var englishSwitch = document.getElementsByClassName("en_languageButton");
+for(var i = 0; i < englishSwitch.length; i++){
+englishSwitch[i].onclick = function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  switchLanguage("en");
+}
+}
+var frenchSwitch = document.getElementsByClassName("fr_languageButton");
+for(var i = 0; i < frenchSwitch.length; i++){
+frenchSwitch[i].onclick = function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  switchLanguage("fr");
+}
+}
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else {
+  x.className = x.className.replace(" w3-show", "");
+}
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+</script>
+
+</body>
+</html>

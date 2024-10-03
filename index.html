@@ -1,0 +1,262 @@
+<html>
+<head>
+	<title>David Rozen-Rechels - Home Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body {
+		font-family: "Lato", sans-serif
+	}
+
+	.hide{
+		display: none !important;
+	}
+
+	a.w3-bar-item img.icon{
+		max-height: 1em;
+	}
+
+	.mySlides {
+		display: none
+	}
+
+	.photo-grid img{
+		height: auto;
+		width: auto;
+		max-height: 150px;
+	}
+	</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="./index.php" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">RESEARCH<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="./research.html" class="w3-bar-item w3-button">Research</a>
+          <a href="./current.html" class="w3-bar-item w3-button">Current projects</a>
+          <a href="./past.html" class="w3-bar-item w3-button">Past projects</a>
+        </div>
+      </div>
+      <a href="./pubs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
+      <a href="./teaching.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING</a>
+      <a href="./cv.pdf" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CV</a>
+      <a href="./blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
+      <a href="./index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <a href="./music.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MUSIC</a>
+      <a href="./photography.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTO</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small en_languageButton" data-language="fr" title="English">
+        <img src="./images/en_icon.png" alt="English" class="icon" />
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small fr_languageButton" data-language="en" title="Français">
+        <img src="./images/fr_icon.png" alt="Français" class="icon" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <div class="w3-dropdown-hover">
+        <button class="w3-padding-large w3-button" title="More">RESEARCH<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="./research.html" class="w3-bar-item w3-button">Research</a>
+          <a href="./current.html" class="w3-bar-item w3-button">Current projects</a>
+          <a href="./past.html" class="w3-bar-item w3-button">Past projects</a>
+        </div>
+      </div>
+      <a href="./pubs.html" class="w3-bar-item w3-button w3-padding-large">PUBLICATIONS</a>
+      <a href="./teaching.html" class="w3-bar-item w3-button w3-padding-large">TEACHING</a>
+      <a href="CV.pdf" target="_blank" class="w3-bar-item w3-button w3-padding-large">CV</a>
+      <a href="./blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
+      <a href="./index.html#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+      <a href="./music.html" class="w3-bar-item w3-button w3-padding-large">MUSIC</a>
+      <a href="./photography.html" class="w3-bar-item w3-button w3-padding-large">PHOTO</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large en_languageButton" data-language="fr" title="English">
+        <img src="./images/en_icon.png" alt="English" class="icon" />
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large fr_languageButton" data-language="en" title="Français">
+        <img src="./images/fr_icon.png" alt="Français" class="icon" />
+      </a>
+  </div>
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img5.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img6.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img7.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img8.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+
+
+<!-- The BIO Section -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1000px" id="bio">
+  <h2 class="w3-wide">David Rozen-Rechels</h2>
+  <p class="w3-opacity" data-language="en"><i>PhD in Ecology, Assistant Lecturer</i></p>
+  <p class="w3-opacity" data-language="fr"><i>Docteur en Écologie, Maître de Conférences</i></p>
+  <p class="w3-display-container w3-third w3-center">
+    <img src="./images/portrait2.jpeg" style="width:90%">
+  </p>
+  <p class="w3-justify w3-twothird" data-language="en">
+    In a context of global change, organisms will face chronic (temperature increase) and acute (extreme events such as drought) change in their environment. As a behavioral ecologist, I am interested in studying how the behavior buffers the effect on environemental changes on individual physiology and ecology. More specifically, how and when are individuals active and how is that related to overheating and dehydration risks? Where do individuals move in the landscape? Until what point is behavioral plasticity selected over tolerance to environmental changes?
+    I am a permanent lecturer at Sorbonne Université, dividing my time between teaching ecology to undergraduate and master students, and doing my research in the <a href="https://iees-paris.fr">Institut d'Écologie et des Sciences de l'Environnement de Paris</a>. I am actually working on studying the behavioral plasticity of urban birds (feral pigeons especially) to heatwaves. Cities are highly heterogeneous landscapes, known as being heat islands because of impervious surfaces, but in which
+    organisms can find fresh shelters or abundant water patch thanks to human activities.
+    My Phd thesis in iEES Paris focused on the behavioral thermo-hydroregulation in common lizards, showing the relevance of considering both temperature and water in behavioral responses to environmental changes. I then worked in Damien Farine's group in the Max Planck Institute of Animal Behavior as a Humboldt fellow, applying my behavioral ecophysiology questions to a arid zone bird, the vulturine guineafowl, through the study of its fine-scaled movements thanks to biologging.
+    Please have a look to my past and present <a href="/research.php">presearch projects</a>! Don't forget that I am as much (if not more) a <a href="/teaching.php">teacher</a> than a researcher.
+  </p>
+  <p class="w3-justify w3-twothird" data-language="fr">
+    Dans un contexte de changements environnementaux globaux, les organismes vont être confrontés à des modifications chroniques (augmentation de la température) et aïgues (évènements extremes comme les sécheresses) de leur environnement. En tant que chercheur en écologie comportementale, je suis interessé par le tamponnage comportemental des changements environnmentaux sur la physiologie et l'écologie des individus. Plus spécifiquement, comment et quand sont actifs les individuas et comment des variations d'activité peuvent-elles être expliquées par le risque d'hyperthermie ou de déshydratation ? Où se déplacent les organismes dans le paysage ? Comment la vie en groupe influence-t-elle ces prises de décision ?
+    Je suis maître de conférences à Sorbonne Université où je partage mon temps entre l'enseignement de l'écologie aux étudiant·e·s de licence et de master et la conduite de ma recherche à l'<a href="https://iees-paris.fr">Institut d'Écologie et des Sciences de l'Environnement de Paris</a>. Je développe actuallement le projet d'étudier la plasticité comportementale des oiseaux urbains (les pigeons bisets plus particulièrement) en réponse aux canicules. Les villes sont des paysages très hétérogènes, connu pour être des îlots de chaleur en raison de leur revêtement artificiel imperméable, mais où les organismes peuvent trouver des abris frais et des points d'eau grâce aux activités humaines.
+    Au cours de ma thèse de doctorat à l'iEES Paris, j'ai cherché à montrer l'importance de considérer à la fois l'eau et la température dans l'étude des réponses comportementales aux changements environnementaux : c'est la thermo-hydrorégulation comportementale. J'ai ensuite pu approfondir ces questions d'écophysiologie comportementale dans l'équipe de Damien Farine, au Max Planck Institute of Animal Behavior en tant que post-doctorant de la fondation Humboldt. J'ai alors étudié les mouvements fins d'un oiseau d'environnement aride, la pintade vulturine, à l'aide de la télémétrie.
+    Jetez un oeil au détail de mes <a href="/research.php">projets de recherche</a> passés et présents ! Mon travail est cependant indissociable de <a href="/teaching.php">l'enseignement</a>.
+    </p>
+  <div class="w3-row w3-padding-32">
+   <h3 class="w3-wide">Please visit:</h3>
+   <div class="w3-half">
+    <p>My ResearchGate</p>
+    <a href="https://www.researchgate.net/profile/David_Rozen-Rechels"><img src="./images/logo1.png" class="w3-round w3-margin-bottom" style="width:40%"></a>
+    <p>The group website</p>
+    <a href="https://iees-paris.fr/"><img src="./images/logo2.png" class="w3-round w3-margin-bottom" style="width:40%"></a>
+  </div>
+  <div class="w3-half">
+    <p>My Scholar profile</p>
+    <a href="http://scholar.google.com/citations?user=OcFzWAQAAAAJ&hl=fr"><img src="./images/logo3.png" class="w3-round w3-margin-bottom" style="width:40%"></a>
+  </div>
+</div>
+</div>
+
+<!-- The Contact Section -->
+<div class="w3-black">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center" data-language="fr">CONTACTEZ MOI !</h2>
+    <h2 class="w3-wide w3-center" data-language="en">CONTACT ME!</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-large w3-margin-bottom">
+        <table>
+          <tr>
+            <td><i class="fa fa-envelope" style="width:30px"> </i></td>
+            <td> david *point* rozen-rechels *at* sorbonne-universite *point* fr</a></td>
+          </tr>
+          <tr>
+              <td><i class="fa fa-phone" style="width:30px"></i></td>
+              <td></td>
+            </tr>
+
+  <tr>
+    <td style="vertical-align: top;"><i class="fa fa-map-marker" style="width:30px"></i></td>
+    <td>Sorbonne Université<br> Faculté des Sciences et Ingénierie <br> Campus Pierre et Marie Curie <br> Institut d'Écologie et des Sciences de l'Environnement de Paris <br> Barre 44-45, 5e étage, Bureau 512 <br> 4 Place Jussieu <br> 75005 Paris</td>
+</tr>
+</table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<a href="https://twitter.com/DRozenRechels" target="_blank">
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+</a>
+&nbsp;<small>This website has been built with the help of <a href="http://louphole.com/" target="_blank">Louphole</a></small>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+window.drr_language = localStorage.getItem("drr_language");
+if(window.drr_language == null){
+window.drr_language = ["fr", "en"].indexOf(window.navigator.language) > -1 ? window.navigator.language : "en";
+localStorage.setItem("drr_language", window.drr_language);
+}
+switchLanguage(window.drr_language);
+
+function switchLanguage(newLanguage){
+var allLanguageElements = document.querySelectorAll('[data-language]');
+for(var i = 0; i< allLanguageElements.length; i++){
+  allLanguageElements[i].classList.add("hide");
+}
+var selectedLanguageElements = document.querySelectorAll('[data-language="'+ newLanguage +'"]');
+for(var i = 0; i< selectedLanguageElements.length; i++){
+  selectedLanguageElements[i].classList.remove("hide");
+}
+localStorage.setItem("drr_language", newLanguage);
+}
+
+var englishSwitch = document.getElementsByClassName("en_languageButton");
+for(var i = 0; i < englishSwitch.length; i++){
+englishSwitch[i].onclick = function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  switchLanguage("en");
+}
+}
+var frenchSwitch = document.getElementsByClassName("fr_languageButton");
+for(var i = 0; i < frenchSwitch.length; i++){
+frenchSwitch[i].onclick = function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  switchLanguage("fr");
+}
+}
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else {
+  x.className = x.className.replace(" w3-show", "");
+}
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+</script>
+
+</body>
+</html>

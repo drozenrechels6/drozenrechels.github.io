@@ -1,0 +1,283 @@
+<html>
+<head>
+	<title>David Rozen-Rechels - Home Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body {
+		font-family: "Lato", sans-serif
+	}
+
+	.hide{
+		display: none !important;
+	}
+
+	a.w3-bar-item img.icon{
+		max-height: 1em;
+	}
+
+	.mySlides {
+		display: none
+	}
+
+	.photo-grid img{
+		height: auto;
+		width: auto;
+		max-height: 150px;
+	}
+	</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="./index.php" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">RESEARCH<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="./research.html" class="w3-bar-item w3-button">Research</a>
+          <a href="./current.html" class="w3-bar-item w3-button">Current projects</a>
+          <a href="./past.html" class="w3-bar-item w3-button">Past projects</a>
+        </div>
+      </div>
+      <a href="./pubs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PUBLICATIONS</a>
+      <a href="./teaching.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEACHING</a>
+      <a href="./cv.pdf" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CV</a>
+      <a href="./blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
+      <a href="./index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <a href="./music.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MUSIC</a>
+      <a href="./photography.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTO</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small en_languageButton" data-language="fr" title="English">
+        <img src="./images/en_icon.png" alt="English" class="icon" />
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small fr_languageButton" data-language="en" title="Français">
+        <img src="./images/fr_icon.png" alt="Français" class="icon" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <div class="w3-dropdown-hover">
+        <button class="w3-padding-large w3-button" title="More">RESEARCH<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="./research.html" class="w3-bar-item w3-button">Research</a>
+          <a href="./current.html" class="w3-bar-item w3-button">Current projects</a>
+          <a href="./past.html" class="w3-bar-item w3-button">Past projects</a>
+        </div>
+      </div>
+      <a href="./pubs.html" class="w3-bar-item w3-button w3-padding-large">PUBLICATIONS</a>
+      <a href="./teaching.html" class="w3-bar-item w3-button w3-padding-large">TEACHING</a>
+      <a href="CV.pdf" target="_blank" class="w3-bar-item w3-button w3-padding-large">CV</a>
+      <a href="./blog.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OUTREACH</a>
+      <a href="./index.html#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+      <a href="./music.html" class="w3-bar-item w3-button w3-padding-large">MUSIC</a>
+      <a href="./photography.html" class="w3-bar-item w3-button w3-padding-large">PHOTO</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large en_languageButton" data-language="fr" title="English">
+        <img src="./images/en_icon.png" alt="English" class="icon" />
+      </a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large fr_languageButton" data-language="en" title="Français">
+        <img src="./images/fr_icon.png" alt="Français" class="icon" />
+      </a>
+  </div>
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img5.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img6.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img7.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/img8.png" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      </div>
+    </div>
+
+
+<!-- The Teaching Section in English-->
+<div class="w3-container w3-content w3-padding-64" style="max-width:1000px" id="teaching" data-language="en">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">Teaching experience (NOT UPDATED)</h2>
+    <p class="w3-justify">I started my teaching experience in 2015 with the ambition to complement my research activities with strong teaching activities. I am very attached to the French signification of "enseignant-chercheur", our job name, which show that both are deeply connected. I think that the lecturer brings to the students skills, knowledge, criticism and help to make professional choices
+      on one side, but students and teaching activities give an opportunity to the lecturer to take a step back from hisher research, keep updated on the field, and also question biology constantly through students questions and interest. I don't describe teaching as a simple transfer of knowledge to students and I am much more attached to a vision in which the teacher guides the student to
+      be autonomous and critic in its own learning. I am therefore attached to a pedagogy based on projects and collective work. After a bachelor in biology, I would not expect students to know everything on the wide diversity of fields but to be able to think their work and the society with a biologist eye. <br> My teaching activities concern biology and methods in biological studies from the bachelor degree
+      to PhD courses. Below is a short list of my past and present activities. Courses materials are not made publicly available and some of them do not belong to me. I am however happy to consider demands of lecturers, teachers and students on the materials or other matters.
+   </p>
+   <h3 class="w3-wide w3-center">Actual teaching</h3>
+   <ul>
+   <li><b>Optimal Foraging Theory</b> in a Behavioral Ecology course (Year 2 Master Biodiversity Ecology Evolution in Sorbonne Université)</li>
+   <li><b>Animal communication and sexual selection</b> in a master preparing for CAPES and Agregation examination (life and earth sciences teachers) in La Rochelle Université</li>
+   </ul>
+   <h3 class="w3-wide w3-center">Temporary Lecturer - La Rochelle Université 2019-2020</h3>
+   <ul>
+   <li><b>Animal communication and sexual selection</b> in a master preparing for CAPES and Agregation examination (life and earth sciences teachers)</li>
+   <li><b>Ecology: Sampling and experiments</b> in Life Sciences Bachelor</li>
+   <li><b>Methodology: scientific talks</b> in Life Sciences Bachelor</li>
+   <li><b>Plant Biology: laboratory protocols, anatomy, physiology</b> in Life Sciences Bachelor</li>
+   <li><b>Physiology: osmolarity</b> in Life Sciences Bachelor</li>
+   <li><b>Embryology</b> in Life Sciences Bachelor</li>
+   <li><b>Discovery of Biology: from cells to biomes</b> in Life Sciences Bachelor</li>
+   </ul>
+   <h3 class="w3-wide w3-center">Teaching as PhD Student - Sorbonne Uniersité 2016-2019</h3>
+   <ul>
+   <li><b>Practices in Behavioral Ecology</b> in a Behavioral Ecology course (Year 2 Master Biodiversity Ecology Evolution in Sorbonne Université)</li>
+   <li><b>Ecology: discussion based on documents linking to society issues</b> in Life Sciences Bachelor</li>
+   <li><b>Ecology: ecological and evolutive role of viruses</b> in Life Sciences Bachelor</li>
+   <li><b>Ecology: experimental procedures in natural conditions</b> in Life Sciences Bachelor</li>
+   <li><b>Ecology: bases</b> in Life Sciences Bachelor</li>
+   </ul>
+   <h3 class="w3-wide w3-center">Other</h3>
+    <ul>
+      <li><b>Assistance in statistics</b> in a Generalized Linear Models for Evolutionary Ecologists courses for PhD students in École Normale Supérieure</li>
+      <li><b>Assistance in practices in Ecology</b> in Life Sciences Bachelor in École Normale Supérieure</li>
+      <li><b>Oral examinations: Biology and Geology</b> in classes preparing for agronomic and veterinary colleges</li>
+      <li><b>Private lessons: Biology and Geology</b> to a student preparing for agronomic and veterinary colleges</li>
+    </ul>
+ </div>
+</div>
+
+<!-- The Teaching Section in French-->
+<div class="w3-container w3-content w3-padding-64" style="max-width:1000px" id="teaching" data-language="fr">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide w3-center">Expérience d'enseignement (PAS A JOUR)</h2>
+    <p class="w3-justify">J'ai commencé à enseigner en 2015 avec la vocation de ne jamais dissocier mes activités de recherche avec une forte activité pédagogique. Je suis très attaché à l'intitulé de mon emploi en France, "enseignant-chercheur", qui montre que les deux sont profondément connectés. Je pense que l'enseignant dans le supérieur apporte compétences, connaissances, esprit critique et aide dans la construction
+      d'un projet professionnel aux étudiant.e.s. Toutefois, celles-ci et ceux-ci donnent un opportunité aux chercheuses et chercheurs de prendre du recul sur leur recherche, de rester à jour quant à l'état de la biologie dans son ensemble, et de questioner la biologie continuellement à travers les questionnements des étudiant.e.s. Je ne décris pas la pédagogie à un simple transfert de connaissance vers les étudiant.e.
+      Je suis beaucoup plus attaché à une vision où l'enseignant place l'étudiant.e au coeur de son apprentissage pour qu'il le réalise de manière autonome et critique. Je suis alors très attaché à la pédagogie par projets basés sur des travaux collectifs et des échanges. A la fin de leur cursus, je n'attends pas que les étudiant.e.s connaissant tout de la grande diversité de disciplines qui constituent la biologie
+      mais qu'ils et elles soient capables de penser leur travail et la société avec un oeil de biologiste. <br> Mes activités d'enseignement concernent la biologie et les méthodes utilisées dans les études biologiques de la licence au doctorat. Veuillez trouver ci-dessous une list de mes activités passées et présentes. Les supports de cours ne sont pas disponibles publiquement et certains ne dépendent pas de moi.
+      Je serais toutefois heureux de considérer toute demande d'enseignant.e.s et d'étudiant.e.s pour ces supports ou d'autres sujets.
+   </p>
+   <h3 class="w3-wide w3-center">Enseignements actuels</h3>
+   <ul>
+   <li><b>Optimal Foraging Theory</b> dans l'UE Écologie Comportementale (Master 2 Biodiversité Écologie Évolution à  Sorbonne Université)</li>
+   <li><b>Communication animale et sélection sexuelle</b> en Master MEEF à La Rochelle Université</li>
+ </ul>
+   <h3 class="w3-wide w3-center">ATER - La Rochelle Université 2019-2020</h3>
+   <ul>
+   <li><b>Communication animale et sélection sexuelle</b> en Master MEEF</li>
+   <li><b>Écologie : échantillonnage et procédure expérimentale</b> dans la Licence de Sciences de la Vie</li>
+   <li><b>Methodologie : oraux scientifiques</b> dans la Licence de Sciences de la Vie</li>
+   <li><b>Biologie Végétale : protocoles de laboratoires, anatomie, physiologie</b> dans la Licence de Sciences de la Vie</li>
+   <li><b>Physiologie : osmolarité</b> dans la Licence de Sciences de la Vie</li>
+   <li><b>Embryologie</b> dans la Licence de Sciences de la Vie</li>
+   <li><b>Découverte des Sciences de la Vie : des cellules aux biomes</b> dans la Licence de Sciences de la Vie</li>
+   </ul>
+   <h3 class="w3-wide w3-center">Doctorant Chargé de Mission d'Enseignement - Sorbonne Uniersité 2016-2019</h3>
+   <ul>
+   <li><b>Assistance dans l'encadrement de travaux pratiques en Écologie Comportementale</b> dans l'UE Écologie Comportementale (Master 2 Biodiversité Écologie Évolution à  Sorbonne Université)</li>
+   <li><b>Écologie : discussion basée sur des documents en lien avec des problèmes de société</b> dans la Licence de Sciences de la Vie</li>
+   <li><b>Écologie : rôles écologiques et évolutifs des virus</b> dans la Licence de Sciences de la Vie</li>
+   <li><b>Écologie : procédures expérimentales en conditions naturelles</b> dans la Licence de Sciences de la Vie</li>
+   <li><b>Écologie : bases</b> dans la Licence de Sciences de la Vie</li>
+   </ul>
+   <h3 class="w3-wide w3-center">Autres</h3>
+   <ul>
+     <li><b>Assistance en statistiques</b> dans une formation doctorale "Generalized Linear Models for Evolutionary Ecologists" à l'École Normale Supérieure</li>
+     <li><b>Assistance dans l'encadrement de travaux pratiques en Écologie</b> dans la Licence de Sciences de la Vie à l'École Normale Supérieure</li>
+     <li><b>Interrogations orales : Biologie and Geologie</b> en Classes Préparatoires BCPST (Biologie, Physique, Chimie, Sciences de la Terre)</li>
+     <li><b>Cours particuliers : Biologie and Geologie</b> en Classes Préparatoires BCPST (Biologie, Physique, Chimie, Sciences de la Terre)</li>
+   </ul>
+ </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<a href="https://twitter.com/DRozenRechels" target="_blank">
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+</a>
+&nbsp;<small>This website has been built with the help of <a href="http://louphole.com/" target="_blank">Louphole</a></small>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+window.drr_language = localStorage.getItem("drr_language");
+if(window.drr_language == null){
+window.drr_language = ["fr", "en"].indexOf(window.navigator.language) > -1 ? window.navigator.language : "en";
+localStorage.setItem("drr_language", window.drr_language);
+}
+switchLanguage(window.drr_language);
+
+function switchLanguage(newLanguage){
+var allLanguageElements = document.querySelectorAll('[data-language]');
+for(var i = 0; i< allLanguageElements.length; i++){
+  allLanguageElements[i].classList.add("hide");
+}
+var selectedLanguageElements = document.querySelectorAll('[data-language="'+ newLanguage +'"]');
+for(var i = 0; i< selectedLanguageElements.length; i++){
+  selectedLanguageElements[i].classList.remove("hide");
+}
+localStorage.setItem("drr_language", newLanguage);
+}
+
+var englishSwitch = document.getElementsByClassName("en_languageButton");
+for(var i = 0; i < englishSwitch.length; i++){
+englishSwitch[i].onclick = function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  switchLanguage("en");
+}
+}
+var frenchSwitch = document.getElementsByClassName("fr_languageButton");
+for(var i = 0; i < frenchSwitch.length; i++){
+frenchSwitch[i].onclick = function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  switchLanguage("fr");
+}
+}
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else {
+  x.className = x.className.replace(" w3-show", "");
+}
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = "none";
+}
+}
+</script>
+
+</body>
+</html>
